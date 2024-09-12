@@ -3,9 +3,10 @@ import pygame
 import os
 import random
 import sys
-sys.path.append('/Users/macuser/Documents/GitHub/Panzer-Game/Panzer_Game/Panzer_Game_Code')
+sys.path.append('d:/Projects/Python/Panzer_Game_Git/Panzer_Game/Panzer_Game_Code')
 
 from objects_class import *
+from EnemyAI import Enemy
 from maps import map
 # from .objects_class import *
 pygame.init()
@@ -42,6 +43,8 @@ for textures in map:
 
 user = User(2, 2)
 user2 = User2(24, 2)
+enemy = Enemy(4, 2, r"D:\Projects\Python\Panzer_Game_Git\Panzer_Game\Panzer_Game_Code\Textures\silvertank_front.png")
+
 timer = pygame.time.Clock()
 
 game_start_processing = True

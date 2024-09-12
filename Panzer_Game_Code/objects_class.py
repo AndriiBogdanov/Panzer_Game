@@ -2,15 +2,16 @@ import pygame
 import os
 
 import sys
-sys.path.append('/Users/macuser/Documents/GitHub/Panzer-Game/Panzer_Game/Panzer_Game_Code')
+
+sys.path.append('d:/Projects/Python/Panzer_Game_Git/Panzer_Game/Panzer_Game_Code')
 
 from maps import map
 
 
 
 PATH = os.path.abspath(__file__ + '/../Textures')
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_WIDTH = 1080
+SCREEN_HEIGHT = 720
 STEP = 40
 
 window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -142,8 +143,8 @@ class User2(Panzern):
             self.rotation_to_obj(270)
         elif play_keys[pygame.K_f]:
             self.strikes()
-        
-class Enemy(Panzern):
+
+#class Enemy(Panzern):
     
 
             
